@@ -1,0 +1,8 @@
+{
+  "name": "sam-local-poc",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "sam local start-api"
+  }
+}

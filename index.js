@@ -1,6 +1,6 @@
 exports.handler = (event, context, callback) => {
-	console.log(event.festivalId);
-	console.log(event);
+	console.log('env:', process.env.ENV_VAR);
+	console.log('event:',  event);
 	callback(null, {
 		statusCode: 200,
 		body: event.queryStringParameters['queryString']

@@ -5,14 +5,18 @@ Description: |
   A simple Hello World Serverless project
 
 Resources:
-  HelloWorld:
+  SomeFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs6.10
       Handler: index.handler
+      Runtime: nodejs6.10
+      Environment:
+        Variables:
+          ENV_VAR:
       Events:
         MyFunction:
           Type: Api
           Properties:
             Path: /some-path/{pathParam}
             Method: any
+

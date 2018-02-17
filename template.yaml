@@ -11,7 +11,7 @@ Resources:
       Runtime: nodejs6.10
       Handler: index.handler
       Events:
-        ValidateFestivalId:
+        MyFunction:
           Type: Api
           Properties:
             Path: /some-path/{pathParam}
